@@ -31,7 +31,7 @@ class CircleButton extends React.Component {
             {
     this.state.fontLoaded ? (
 		<Text style={[styles.circleButtonTitle, { color: textColor }]}>
-    		{ '\uf040' }
+    		{ this.props.children }
 		</Text>
     ) : null
             }
@@ -57,8 +57,8 @@ const styles = StyleSheet.create({
   },
   circleButtonTitle: {
     fontFamily: 'FontAwesome',
-    fontSize: 32,
-    lineHeight: 32,
+    fontSize: 24,
+    lineHeight: 24,
   },
 });
 
