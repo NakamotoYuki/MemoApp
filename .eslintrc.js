@@ -31,6 +31,7 @@ module.exports = {
         "semi": [
             "warn",
             "always"
-        ]
+        ],
+        "Component should be written as a pure functiond": 0
     }
 };
