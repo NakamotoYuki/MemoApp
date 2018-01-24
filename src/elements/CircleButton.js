@@ -42,7 +42,6 @@ class CircleButton extends React.Component {
 
 const styles = StyleSheet.create({
   circleButton: {
-      fontFamily: 'FontAwesome',
       position: 'absolute',
       bottom: 32,
       right: 32,
@@ -57,6 +56,7 @@ const styles = StyleSheet.create({
       shadowRadius: 3,
   },
   circleButtonTitle: {
+    fontFamily: 'FontAwesome',
     fontSize: 32,
     lineHeight: 32,
   },
