@@ -8,12 +8,12 @@ class CircleButton extends React.Component {
         fontLoaded: false,
     };
 
-//    async componentWillMount() {
-//        await Font.loadAsync({
-//             FontAwesome: fontAwesome,
-//        });
-//         this.setState({ fontLoaded: true });
-//    }
+    async componentWillMount() {
+        await Font.loadAsync({
+             FontAwesome: fontAwesome,
+        });
+         this.setState({ fontLoaded: true });
+    }
 
     render() {
         const { style, color } = this.props;
@@ -42,7 +42,7 @@ class CircleButton extends React.Component {
 
 const styles = StyleSheet.create({
   circleButton: {
-//      fontFamily: 'FontAwesome',
+      fontFamily: 'FontAwesome',
       position: 'absolute',
       bottom: 32,
       right: 32,
