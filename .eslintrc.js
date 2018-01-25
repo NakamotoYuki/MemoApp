@@ -32,6 +32,11 @@ module.exports = {
             "warn",
             "always"
         ],
-        "Component should be written as a pure functiond": 0
+        "no-use-before-define": 0,
+        "react/prefer-stateless-function": 0,
+        "react/jsx-filename-extension": 0,
+        "react/prop-types": 0,
+        "key-spacing": 0
     }
+    "parser": "babel-eslint"
 };
