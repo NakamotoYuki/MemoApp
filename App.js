@@ -15,13 +15,13 @@ const config = {
     databaseURL: ENV.FIREBASE_DB_URL,
     projectId: ENV.FIREBASE_PRJ_ID,
     storageBucket: ENV.FIREBASE_STORAGE,
-    messagingSenderId: ENV.FIREBASE_SENDER_ID
+    messagingSenderId: ENV.FIREBASE_SENDER_ID,
 };
 firebase.initializeApp(config);
 
 const App = StackNavigator({
-    Signup: {screen: SignupScreen},
     Login: {screen: LoginScreen},
+    Signup: {screen: SignupScreen},
     Home: {screen: MemoListScreen},
     MemoDetail: {screen: MemoDetailScreen},
     MemoEdit: {screen: MemoEditScreen},

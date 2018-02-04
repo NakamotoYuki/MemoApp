@@ -38,6 +38,6 @@ module.exports = {
         "react/prop-types": 0,
         "key-spacing": 0,
         "react/jsx-no-binds": 0
-    }
+    },
     "parser": "babel-eslint"
 };
