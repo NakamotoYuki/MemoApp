@@ -21,7 +21,7 @@ class MemoEditScreen extends React.Component {
         const { currentUser } = firebase.auth();
         const db = firebase.firestore();
         console.log(this.state);
-        db.collection(`users/$(currentUser.uid)/memos`).doc(this.state.key)
+        db.collection(`users/${currentUser.uid}/memos`).doc(this.state.key)
             .update({
                 body: this.state.body,
             })
